@@ -8,11 +8,13 @@ import Common from '../component/common';  // 自动找到index.js引入
 import  "mui/dist/css/mui.css";
 import  "mui/examples/hello-mui/css/icons-extra.css";
 import VueRouter from "vue-router";
+import axios from "axios";
 
 // 1.2 启用vue插件
 Vue.use(MintUi);
 Vue.use(Common);
-Vue.use(VueRouter);
+Vue.prototype.axios=axios;
+// Vue.use(VueRouter);
 
 // 2.1 导入根组件
 import AppComponent from '../component/app.vue';
