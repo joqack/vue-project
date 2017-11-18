@@ -13,16 +13,21 @@ import axios from "axios";
 // 1.2 启用vue插件
 Vue.use(MintUi);
 Vue.use(Common);
-Vue.prototype.axios=axios;
-// Vue.use(VueRouter);
+Vue.use(VueRouter);
 
+//将axios放入原型中，直接可获取axios
+Vue.prototype.axios=axios;
 // 2.1 导入根组件
 import AppComponent from '../component/app.vue';
+
+//导入路由配置
+import routerCfg from "../router";
 
 // 2.2 渲染根组件, 启动项目
 new Vue({
     el: '#app',
     render(createNode) {
         return createNode(AppComponent);
-    }
+    },
+    router:new VueRouter(routerCfg),
 });
