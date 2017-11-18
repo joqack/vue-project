@@ -26,18 +26,18 @@ module.exports={
         rules:[
             {
                 test:/\.css$/,
-                use:['styel-loader','css-loader']
+                use:['style-loader','css-loader']
             },
             {
                 test:/\.less$/,
-                use:['styel-loader','css-loader','less-loader']
+                use:['style-loader','css-loader','less-loader']
             },
             {
                 test:/\.html$/,
                 use:['html-loader']
             },
             {
-                test:/\.(png|jpg|jpeg|gifb|bmg|svg|mp3|mp4)$/,
+                test:/\.(png|jpg|jpeg|gifb|bmg|svg|mp3|mp4|ttf)$/,
                 use:[
                 {loader:'url-loader',options:{limit:10240}}  
             ]

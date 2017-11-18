@@ -1,5 +1,6 @@
 <template>
-  <div>
-      测试
-  </div>
+    <div class="body">
+          <app-header></app-header>
+          <app-footer></app-footer>
+    </div>
 </template>
