@@ -10,10 +10,16 @@ import  "mui/examples/hello-mui/css/icons-extra.css";
 import VueRouter from "vue-router";
 import axios from "axios";
 
+
+
+// 引入filter
+import formatTime from "../filter/formatTime.js";
+
 // 1.2 启用vue插件
 Vue.use(MintUi);
 Vue.use(Common);
 Vue.use(VueRouter);
+Vue.use(formatTime);
 
 //将axios放入原型中，直接可获取axios
 Vue.prototype.axios=axios;
@@ -23,6 +29,9 @@ import AppComponent from '../component/app.vue';
 //导入路由配置
 import routerCfg from "../router";
 
+//导入api配置文件
+import api from "../httpApi";
+Vue.prototype.api=api;
 // 2.2 渲染根组件, 启动项目
 new Vue({
     el: '#app',
