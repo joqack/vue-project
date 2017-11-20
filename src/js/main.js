@@ -13,13 +13,13 @@ import axios from "axios";
 
 
 // 引入filter
-import formatTime from "../filter/formatTime.js";
+import filter from "../filter";
 
 // 1.2 启用vue插件
 Vue.use(MintUi);
 Vue.use(Common);
 Vue.use(VueRouter);
-Vue.use(formatTime);
+Vue.use(filter);
 
 //将axios放入原型中，直接可获取axios
 Vue.prototype.axios=axios;
