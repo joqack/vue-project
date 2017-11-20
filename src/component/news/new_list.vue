@@ -1,6 +1,5 @@
 <template>
     <main>
-         <app-title v-bind:tit='title'></app-title>
         <ul class="mui-table-view" v-for='item in newList' v-bind:key="item.id">
             <li class="mui-table-view-cell mui-media">
                 <router-link :to="{ path:`/new/detail/${item.id}`}">

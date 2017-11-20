@@ -10,7 +10,8 @@ import  "mui/examples/hello-mui/css/icons-extra.css";
 import VueRouter from "vue-router";
 import axios from "axios";
 
-
+//引入全局css
+import "../less/index.less";
 
 // 引入filter
 import filter from "../filter";
