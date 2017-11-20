@@ -9,6 +9,7 @@ import  "mui/dist/css/mui.css";
 import  "mui/examples/hello-mui/css/icons-extra.css";
 import VueRouter from "vue-router";
 import axios from "axios";
+import vuePicture from "vue-picture-preview";
 
 //引入全局css
 import "../less/index.less";
@@ -21,6 +22,7 @@ Vue.use(MintUi);
 Vue.use(Common);
 Vue.use(VueRouter);
 Vue.use(filter);
+Vue.use(vuePicture);
 
 //将axios放入原型中，直接可获取axios
 Vue.prototype.axios=axios;
