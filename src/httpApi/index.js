@@ -11,6 +11,16 @@ export default {
     photoC:`${http}/getimgcategory`,
     // 图片detail
     photoImg:`${http}/getthumimages/`,   
-    photoD:`${http}/getimageInfo/`,   
+    photoD:`${http}/getimageInfo/`, 
+    //商品列表
+    goodsL: `${http}/getgoods`,
+    goodsD: `${http}/goods/getdesc`,
+     //商品列表详情
+     goodsP: `${http}/goods/getinfo/`,
+    //  评论
+    goodsC: `${http}/getcomments/`,
+    goodsDesc: `${http}/goods/getdesc/`,
+
+
     
 }

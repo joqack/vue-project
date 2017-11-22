@@ -5,6 +5,9 @@ import newDetailComponent from "../component/news/new_detail.vue";
 // 图片
 import photoListComponent from "../component/photo/photoList.vue";
 import photoDetailComponent from "../component/photo/photoDetail.vue";
+//引入商品相关文件
+import GLComponent from  "../component/goods/goods_list.vue";
+import GDComponent from  "../component/goods/goods_detail.vue";
 
 
 export default {
@@ -17,5 +20,8 @@ export default {
         // 图片
         {name:'pl',path:'/photo/list/:photoid',component:photoListComponent},
         {name:'pd',path:'/photo/detail/:photoid',component:photoDetailComponent},
+        //商品列表
+        {name:'gl',path:'/goods/list/',component:GLComponent},
+        {name:'gd',path:'/goods/detail/:id',component:GDComponent},
     ]
 }
