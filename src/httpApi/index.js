@@ -20,7 +20,7 @@ export default {
     //  评论
     goodsC: `${http}/getcomments/`,
     goodsDesc: `${http}/goods/getdesc/`,
-
-
-    
+    //购物车
+    shopC: `${http}/goods/getshopcarlist/`,
+       
 }

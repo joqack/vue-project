@@ -8,6 +8,8 @@ import photoDetailComponent from "../component/photo/photoDetail.vue";
 //引入商品相关文件
 import GLComponent from  "../component/goods/goods_list.vue";
 import GDComponent from  "../component/goods/goods_detail.vue";
+//购物车
+import shopCComponent from  "../component/shopcart/shopCart.vue";
 
 
 export default {
@@ -23,5 +25,8 @@ export default {
         //商品列表
         {name:'gl',path:'/goods/list/',component:GLComponent},
         {name:'gd',path:'/goods/detail/:id',component:GDComponent},
+        //购物车
+        {name:'gc',path:'/shop/cart/',component:shopCComponent},
+        
     ]
 }
