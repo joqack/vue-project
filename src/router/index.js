@@ -13,6 +13,7 @@ import shopCComponent from  "../component/shopcart/shopCart.vue";
 
 
 export default {
+    linkActiveClass:'mui-active',
     routes:[
         {path:'/',redirect:'/index'},
         {name:'i',path:'/index',component:homeComponent},

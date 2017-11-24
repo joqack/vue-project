@@ -6,7 +6,7 @@
           <app-footer></app-footer>
     </div>
 </template>
-<<script>
+<script>
 export default {
 
 }

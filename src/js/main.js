@@ -10,6 +10,7 @@ import  "mui/examples/hello-mui/css/icons-extra.css";
 import VueRouter from "vue-router";
 import axios from "axios";
 import vuePicture from "vue-picture-preview";
+import Vuex from "vuex";
 
 //引入全局css
 import "../less/index.less";
@@ -23,6 +24,7 @@ Vue.use(Common);
 Vue.use(VueRouter);
 Vue.use(filter);
 Vue.use(vuePicture);
+Vue.use(Vuex);
 
 //将axios放入原型中，直接可获取axios
 Vue.prototype.axios=axios;
@@ -31,9 +33,12 @@ import AppComponent from '../component/app.vue';
 
 //导入路由配置
 import routerCfg from "../router";
+//导入vuex配置
+import store from "../vuex";
 
 //导入api配置文件
 import api from "../httpApi";
+
 Vue.prototype.api=api;
 // 2.2 渲染根组件, 启动项目
 new Vue({
@@ -42,4 +47,5 @@ new Vue({
         return createNode(AppComponent);
     },
     router:new VueRouter(routerCfg),
+    store:new Vuex.Store(store),
 });
